@@ -18,6 +18,7 @@ const actWait = async (amount = 0) => {
 };
 
 describe("App component", () => {
+ 
   it("should be able to add new repository", async () => {
     const { getByText, getByTestId } = render(<App />);
 
@@ -63,4 +64,5 @@ describe("App component", () => {
 
     expect(getByTestId("repository-list")).toBeEmpty();
   });
+  
 });
